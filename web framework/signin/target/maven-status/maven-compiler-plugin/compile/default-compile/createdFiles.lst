@@ -1,0 +1,5 @@
+com\example\signin\service\SigninService.class
+com\example\signin\controller\SigninController.class
+com\example\signin\SigninApplication.class
+com\example\signin\model\Client.class
+com\example\signin\repository\SigninRepository.class
