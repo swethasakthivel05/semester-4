@@ -1,0 +1,36 @@
+Single File Programming Question
+Write a program to calculate the simple interest.
+
+Input format :
+The input consists of the amount, rate of interest, and time period(in years) separated by a space.
+
+Output format :
+The output prints the simple interest with two decimal places.
+
+Sample test cases :
+
+Input 1 :
+155 3 1
+
+Output 1 :
+4.65
+
+Input 2 :
+100 2 3
+
+Output 2 :
+6.00
+
+// You are using GCC
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    float d;
+    cin>>a>>b>>c;
+    d=(float)(a*b*c)/100;
+    cout<<fixed<<setprecision(2)<<d;
+    return 0;
+}

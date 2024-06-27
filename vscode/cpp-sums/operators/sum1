@@ -1,0 +1,53 @@
+Single File Programming Question
+MILEAGE REMUNERATION CALCULATOR
+
+Write a program that calculates mileage remuneration for a salesperson at a rate of Rs.25 per mile. Your program should interact with the user in this manner:
+
+Sample Output 1: (Explanation)
+
+Enter beginning odometer reading: 13505.2
+
+Enter ending odometer reading: 13810.6
+
+You traveled 305.4 miles. At Rs.25 per mile, your remuneration is Rs.7635
+
+
+
+Note: Display the output to two decimal places and round the remuneration value.
+
+Input format :
+The input consists of the values of the beginning and ending odometer reading separated by a space.
+
+Output format :
+The output prints the distance traveled and remuneration separated by a space.
+
+Sample test cases :
+
+Input 1 :
+13505.2 13810.6
+
+Output 1 :
+305.40 7635.00
+
+Input 2 :
+15261.25  18245.70
+
+Output 2 :
+2984.45 74611.00
+
+// You are using GCC
+#include<iostream>
+#include<cmath>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a,b,c,d;
+    cin>>a>>b>>c;
+    c=b-a;
+    d=(round)(25*c);
+    cout<<fixed<<setprecision(2)<<c<<" "<<d;
+    return 0;
+    
+    
+}

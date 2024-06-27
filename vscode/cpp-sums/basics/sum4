@@ -1,0 +1,9 @@
+// You are using GCC
+#include<iostream>
+using namespace std;
+int main()
+{
+    string s;
+    cin>>s;
+    cout<<"Hello "<<s<<"! Welcome to Examly Event Management System";
+}

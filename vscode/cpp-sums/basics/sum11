@@ -1,0 +1,70 @@
+Single File Programming Question
+Pranav and Change
+
+
+
+Pranav, an enthusiastic kid, visited the "Fun Fair 2022" along with his family. His father wanted him to purchase entry tickets from the counter for his family members. Being a little kid, he is just learning to understand units of money. Pranav has paid some amount of money for the tickets, but he wants your help to give him back the change of Rs. N using the minimum number of rupee notes.
+
+
+
+Consider a currency system in which there are notes of seven denominations, namely, Rs. 1, Rs. 2, Rs. 5, Rs. 10, Rs. 50, and Rs. 100. If the change is given to Pranav, then Rs. N is input. Write a program to compute the smallest number of notes that will combine to give Rs. N.
+
+Input format :
+The first line of the input is an integer N, the change to be given to Pranav.
+
+Output format :
+The output should display the smallest number of notes that will combine to give N.
+
+
+
+Refer to sample input and output for formatting specifications.
+
+Code constraints :
+Do not use any looping structures.
+
+Sample test cases :
+Input 1 :
+1200
+
+Output 1 :
+12
+
+Input 2 :
+242
+
+Output 2 :
+7
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+    int c = 0;
+    if (n >= 100) {
+        c += n / 100;
+        n %= 100;
+    }
+    if (n >= 50) {
+        c += n / 50;
+        n %= 50;
+    }
+    if (n >= 10) {
+        c += n / 10;
+        n %= 10;
+    }
+    if (n >= 5) {
+        c += n / 5;
+        n %= 5;
+    }
+    if (n >= 2) {
+        c += n / 2;
+        n %= 2;
+    }
+    if (n >= 1) {
+        c += n / 1;
+        n %= 1;
+    }
+    cout << c;
+    return 0;
+}

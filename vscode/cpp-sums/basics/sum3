@@ -1,0 +1,10 @@
+// You are using GCC
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,m;
+    cin>>n>>m;
+    int s=n+m;
+    cout<<s;
+}

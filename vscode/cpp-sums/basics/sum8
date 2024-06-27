@@ -1,0 +1,47 @@
+Single File Programming Question
+Write a program to display a string in the following format.
+
+eg: Input 
+
+Hi 
+
+Welcome
+
+Output 
+
+Hi and Welcome
+
+Input format :
+The input consists of two strings.
+
+Output format :
+The output prints the final string.
+
+Sample test cases :
+
+Input 1 :
+Hi
+Welcome
+
+Output 1 :
+Hi and Welcome
+
+Input 2 :
+Laugh
+Live
+
+Output 2 :
+Laugh and Live
+
+
+// You are using GCC
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a,b;
+    cin>>a>>b;
+    cout<<a<<" and "<<b;
+    return 0;
+    
+}

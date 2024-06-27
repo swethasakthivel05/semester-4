@@ -1,0 +1,41 @@
+Single File Programming Question
+Vikram buys an old scooter for Rs. A and spends Rs. B on its repairs. If he sells the scooter for Rs. C, what is his gain %?
+
+Write a program to compute the gain %.
+
+Input format :
+The first line of the input consists of the price of the scooter
+
+The second line of the input consists of repair charges
+
+The third line of the input consists of the selling price.
+
+(Refer Sample Input)
+
+Output format :
+The output prints the gain percentage and round off to two decimal places.
+
+(Refer Sample Output)
+
+Sample test cases :
+Input 1 :
+40200
+1800
+52000
+
+Output 1 :
+23.81
+
+#include<iostream>
+#include<iomanip>
+using namespace std;
+// You are using GCC
+int main()
+{
+    int a,b,c;
+    float d;
+    cin>>a>>b>>c;
+    d=(float)(c-(a+b))*100/(a+b);
+    cout<<fixed<<setprecision(2)<<d;
+    return 0;
+}

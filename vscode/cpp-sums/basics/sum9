@@ -1,0 +1,46 @@
+Single File Programming Question
+Write a program to calculate the property tax. Property tax is calculated on 92% of the assessed value of the property. For example, if the assessed value is Rs. 200,000, the property tax is Rs.184,000. Assume the property tax rate is Rs.1.05 for each Rs.100 of the assessed value. Your program should prompt the user to enter the assessed value of the property.
+
+Input format :
+The input consists of a float value that represents the assessed value.
+
+Output format :
+The output prints the assessed value, taxable amount, tax rate, and property tax.
+
+Refer sample input and output for the formatting specifications.
+
+Note: Round off the output to two decimal places.
+
+Sample test cases :
+
+Input 1 :
+200000
+
+Output 1 :
+Assessed Value : 200000.00
+Taxable Amount : 184000.00
+Tax Rate for each Rs.100 : 1.05
+Property Tax : 1932.00
+
+// You are using GCC
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+float assessed_value;
+cin >> assessed_value;
+
+    float taxable_amount = assessed_value * 0.92;
+    float tax_rate = 1.05;
+    float property_tax = (taxable_amount / 100) * tax_rate;
+
+    cout << fixed << setprecision(2);
+    cout << "Assessed Value : " << assessed_value << endl;
+    cout << "Taxable Amount : " << taxable_amount << endl;
+    cout << "Tax Rate for each Rs.100 : " << tax_rate << endl;
+    cout << "Property Tax : " << property_tax << endl;
+
+    return 0;
+
+}
